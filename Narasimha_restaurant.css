@@ -1,0 +1,17 @@
+.gallery{
+	display: none;
+}
+.buttonGallery{
+	position: absolute;
+	background-color: rgba(205,133,63,0.4);
+	top: 0;
+	border: none;
+	outline: none; 
+	height: inherit;
+	cursor: pointer;
+}
+#inner_body{
+	padding-top: 20px;
+	padding-left: 40px;
+	/*color: white;*/
+}

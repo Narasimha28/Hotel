@@ -1,0 +1,25 @@
+#menuitems{
+	background-color: rgba(153, 25, 0, 0.3);
+}
+#menuitems p{
+	font-size: 25px;
+}
+#menuitems input[type = checkbox]{
+	margin: 20px;
+}
+#menuitems span{
+	cursor: pointer;
+	font-size: 20px;
+}
+#menuitems img{
+	padding-left: 70px;
+	display: none;
+	opacity: 0;
+	-webkit-animation-name: show;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-fill-mode: forwards;
+}
+@keyframes show{
+	from {opacity: 0;}
+    to {opacity: 1;}
+}

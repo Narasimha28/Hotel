@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+<title>Narasimha's Restaurant</title>
+
+<head>
+	<link rel="stylesheet" href="restaurant.css">
+	<link rel="stylesheet" href="onlineorder.css">
+</head>
+
+<body>
+	<div id = "title">
+		<h1>Narasimha's Restaurant</h1>
+	</div>
+	<div id = "container">
+		<div>
+			<ul id="menu">
+				<li><a href="Narasimha_restaurant.html">Home</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="onlineorder.html">Order online</a></li>
+				<li><a href="feedback.html">Feedback</a></li>
+				<li><a href="contactus.html">Contact Us</a></li>
+			</ul>
+		</div>
+		<div id = "inner_body">
+			<div id = "menuimg" style = "margin:auto; width:15%">
+				<img src = "images/onlineorder/menu.png" style = "width:80px;height:100px"></img>
+			</div>
+			<div id = "menuitems" style = "margin:0% 10%;padding-left: 5%;overflow:hidden">
+				<div id = "Soups" style = "float:left;width:50%">
+					<div>
+						<p><strong>Soups</strong></p>
+					</div>
+					<div>
+						<input type="checkbox" class = "lentil" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "lentil" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Lentil soup</strong></span>
+						<img class = "lentil" src = "images/onlineorder/lentil.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "tomato" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "tomato" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Tomato Soup</strong></span>
+						<img class = "tomato" src = "images/onlineorder/tomato.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "multani" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "multani" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Multani Soup</strong></span>
+						<img class = "multani" src = "images/onlineorder/multani.jpeg" style = "width:200px;height:200px;"></img>
+					</div>
+				</div>
+				<div id = "appetizers" style = "float:right;width:50%;">
+					<div>
+						<p><strong>Appetizers</strong></p>
+					</div>
+					<div>
+						<input type="checkbox" class = "pakoda" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "pakoda" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Pakoda</strong></span>
+						<img class = "pakoda" src = "images/onlineorder/pakoda.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "gobi65" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "gobi65" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Gobi-65</strong></span>
+						<img class = "gobi65" src = "images/onlineorder/gobi65.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "samosa" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "samosa" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Samosa</strong></span>
+						<img class = "samosa" src = "images/onlineorder/samosa.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "kheemasamosa" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "kheemasamosa" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Kheema Samosa</strong></span>
+						<img class = "kheemasamosa" src = "images/onlineorder/kheemasamosa.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "chicken65" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "chicken65" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Chicken-65</strong></span>
+						<img class = "chicken65" src = "images/onlineorder/chicken65.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+				</div>
+				<div id = "vegcurries" style = "float:left;width:50%;">
+					<div>
+						<p><strong>Vegetarian curries</strong></p>
+					</div>
+					<div>
+						<input type="checkbox" class = "daltadka" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "daltadka" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Dal Tadka</strong></span>
+						<img class = "daltadka" src = "images/onlineorder/daltadka.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "palakpaneer" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "palakpaneer" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Palak Paneer</strong></span>
+						<img class = "palakpaneer" src = "images/onlineorder/palakpaneer.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "aloogobi" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "aloogobi" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Aloo Gobi</strong></span>
+						<img class = "aloogobi" src = "images/onlineorder/aloogobi.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "dalmakhani" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "dalmakhani" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Dal Makhani</strong></span>
+						<img class = "dalmakhani" src = "images/onlineorder/dalmakhani.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "bindimasala" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "bindimasala" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Bindi Masala</strong></span>
+						<img class = "bindimasala" src = "images/onlineorder/bindimasala.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "bainganbharta" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "bainganbharta" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Baingan Bharta</strong></span>
+						<img class = "bainganbharta" src = "images/onlineorder/bainganbharta.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "shahipaneer" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "shahipaneer" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Shahi Paneer</strong></span>
+						<img class = "shahipaneer" src = "images/onlineorder/shahipaneer.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "aloosaag" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "aloosaag" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Aloo Saag</strong></span>
+						<img class = "aloosaag" src = "images/onlineorder/aloosaag.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "navarathankorma" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "navarathankorma" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Navarathan Korma</strong></span>
+						<img class = "navarathankorma" src = "images/onlineorder/navarathankorma.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "paneertikkamasala" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "paneertikkamasala" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Paneer Tikka Masala</strong></span>
+						<img class = "paneertikkamasala" src = "images/onlineorder/paneertikkamasala.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+				</div>
+				<div id = "chickencurries" style = "float:right;width:50%;">
+					<div>
+						<p><strong>Chicken curries</strong></p>
+					</div>
+					<div>
+						<input type="checkbox" class = "chickencurry" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "chickencurry" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Chicken Curry</strong></span>
+						<img class = "chickencurry" src = "images/onlineorder/chickencurry.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "chickenkorma" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "chickenkorma" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Chicken Korma</strong></span>
+						<img class = "chickenkorma" src = "images/onlineorder/chickenkorma.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "chickensaag" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "chickensaag" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Chicken Saag</strong></span>
+						<img class = "chickensaag" src = "images/onlineorder/chickensaag.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "chickenjalfrezi" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "chickenjalfrezi" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Chicken Jalfrezi</strong></span>
+						<img class = "chickenjalfrezi" src = "images/onlineorder/chickenjalfrezi.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "butterchicken" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "butterchicken" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Butter Chicken</strong></span>
+						<img class = "butterchicken" src = "images/onlineorder/butterchicken.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "chickentikkamasala" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "chickentikkamasala" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Chicken Tikka Masala</strong></span>
+						<img class = "chickentikkamasala" src = "images/onlineorder/chickentikkamasala.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "chickenkadai" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "chickenkadai" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Chicken Kadai</strong></span>
+						<img class = "chickenkadai" src = "images/onlineorder/chickenkadai.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "chickenachari" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "chickenachari" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Chicken Achari</strong></span>
+						<img class = "chickenachari" src = "images/onlineorder/chickenachari.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+				</div>
+				<div id = "lambcurries" style = "float:left;width:50%;">
+					<div>
+						<p><strong>Lamb curries</strong></p>
+					</div>
+					<div>
+						<input type="checkbox" class = "lambcurry" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "lambcurry" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Lamb Curry</strong></span>
+						<img class = "lambcurry" src = "images/onlineorder/lambcurry.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "lambkorma" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "lambkorma" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Lamb Korma</strong></span>
+						<img class = "lambkorma" src = "images/onlineorder/lambkorma.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "lambsaag" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "lambsaag" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Lamb Saag</strong></span>
+						<img class = "lambsaag" src = "images/onlineorder/lambsaag.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "lambjalfrezi" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "lambjalfrezi" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Lamb Jalfrezi</strong></span>
+						<img class = "lambjalfrezi" src = "images/onlineorder/lambjalfrezi.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "goanlamb" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "goanlamb" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Goan Lamb</strong></span>
+						<img class = "goanlamb" src = "images/onlineorder/goanlamb.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "lambtikkamasala" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "lambtikkamasala" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Lamb Tikka Masala</strong></span>
+						<img class = "lambtikkamasala" src = "images/onlineorder/lambtikkamasala.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "lambkadai" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "lambkadai" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Lamb Kadai</strong></span>
+						<img class = "lambkadai" src = "images/onlineorder/lambkadai.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "lambachari" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "lambachari" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Lamb Achari</strong></span>
+						<img class = "lambachari" src = "images/onlineorder/lambachari.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+				</div>
+				<div id = "tandooriandkababs" style = "float:right;width:50%;">
+					<div>
+						<p><strong>Tandoori and Kababs</strong></p>
+					</div>
+					<div>
+						<input type="checkbox" class = "paneertikka" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "paneertikka" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Paneer Tikka</strong></span>
+						<img class = "paneertikka" src = "images/onlineorder/paneertikka.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "chickentikka" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "chickentikka" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Chicken Tikka</strong></span>
+						<img class = "chickentikka" src = "images/onlineorder/chickentikka.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "chickenreshmikabab" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "chickenreshmikabab" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Chicken Reshmi Kabab</strong></span>
+						<img class = "chickenreshmikabab" src = "images/onlineorder/chickenreshmikabab.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "chickenbiharikabab" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "chickenbiharikabab" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Chicken Bihari Kabab</strong></span>
+						<img class = "chickenbiharikabab" src = "images/onlineorder/chickenbiharikabab.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "chickensheekkabab" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "chickensheekkabab" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Chicken Sheek Kabab</strong></span>
+						<img class = "chickensheekkabab" src = "images/onlineorder/chickensheekkabab.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "harabarakabab" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "harabarakabab" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Hara Bara Kabab</strong></span>
+						<img class = "harabarakabab" src = "images/onlineorder/harabarakabab.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "lambsheekkabab" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "lambsheekkabab" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Lamb Sheek Kabab</strong></span>
+						<img class = "lambsheekkabab" src = "images/onlineorder/lambsheekkabab.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "lambbotikabab" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "lambbotikabab" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Lamb Boti Kabab</strong></span>
+						<img class = "lambbotikabab" src = "images/onlineorder/lambbotikabab.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "mixedplatter" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "mixedplatter" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Mixed Platter</strong></span>
+						<img class = "mixedplatter" src = "images/onlineorder/mixedplatter.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+				</div>
+				<div id = "naankababwraps" style = "float:left;width:50%;">
+					<div>
+						<p><strong>Naan Kabab Wraps</strong></p>
+					</div>
+					<div>
+						<input type="checkbox" class = "chickenwrap" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "chickenwrap" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Chicken Wrap</strong></span>
+						<img class = "chickenwrap" src = "images/onlineorder/chickenwrap.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "lambwrap" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "lambwrap" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Lamb Wrap</strong></span>
+						<img class = "lambwrap" src = "images/onlineorder/lambwrap.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "paneerwrap" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "paneerwrap" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Paneer Wrap</strong></span>
+						<img class = "paneerwrap" src = "images/onlineorder/paneerwrap.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "chicken65wrap" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "chicken65wrap" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Chicken 65 Wrap</strong></span>
+						<img class = "chicken65wrap" src = "images/onlineorder/chicken65wrap.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+				</div>
+				<div id = "hyderabadispecials" style = "float:right;width:50%;">
+					<div>
+						<p><strong>Hyderabadi Specials (Biryani and Rice)</strong></p>
+					</div>
+					<div>
+						<input type="checkbox" class = "vegetablebiryani" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "vegetablebiryani" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Vegetable Biryani</strong></span>
+						<img class = "vegetablebiryani" src = "images/onlineorder/vegetablebiryani.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "chickenbiryani" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "chickenbiryani" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Chicken Biryani</strong></span>
+						<img class = "chickenbiryani" src = "images/onlineorder/chickenbiryani.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "muttonbiryani" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "muttonbiryani" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Mutton Biryani</strong></span>
+						<img class = "muttonbiryani" src = "images/onlineorder/muttonbiryani.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "bagararice" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "bagararice" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Bagara Rice</strong></span>
+						<img class = "bagararice" src = "images/onlineorder/bagararice.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "plainrice" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "plainrice" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Plain Rice</strong></span>
+						<img class = "plainrice" src = "images/onlineorder/plainrice.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+				</div>
+				<div id = "indochinese" style = "float:left;width:50%;">
+					<div>
+						<p><strong>Indo Chinese</strong></p>
+					</div>
+					<div>
+						<input type="checkbox" class = "vegfriedrice" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "vegfriedrice" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Vegetable Fried Rice</strong></span>
+						<img class = "vegfriedrice" src = "images/onlineorder/vegfriedrice.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "eggfriedrice" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "eggfriedrice" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Egg Fried Rice</strong></span>
+						<img class = "eggfriedrice" src = "images/onlineorder/eggfriedrice.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "chickenfriedrice" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "chickenfriedrice" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Chicken Fried Rice</strong></span>
+						<img class = "chickenfriedrice" src = "images/onlineorder/chickenfriedrice.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "gobimanchuria" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "gobimanchuria" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Gobi Manchuria</strong></span>
+						<img class = "gobimanchuria" src = "images/onlineorder/gobimanchuria.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "chickenmanchuria" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "chickenmanchuria" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Chicken Manchuria</strong></span>
+						<img class = "chickenmanchuria" src = "images/onlineorder/chickenmanchuria.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "chilligobi" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "chilligobi" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Chilli Gobi</strong></span>
+						<img class = "chilligobi" src = "images/onlineorder/chilligobi.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "chillipaneer" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "chillipaneer" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Chilli Paneer</strong></span>
+						<img class = "chillipaneer" src = "images/onlineorder/chillipaneer.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "chillichicken" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "chillichicken" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Chilli Chicken</strong></span>
+						<img class = "chillichicken" src = "images/onlineorder/chillichicken.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+				</div>
+				<div id = "chefspecials" style = "float:right;width:50%;">
+					<div>
+						<p><strong>Chef Specials</strong></p>
+					</div>
+					<div>
+						<input type="checkbox" class = "lambnihari" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "lambnihari" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Lamb Nihari</strong></span>
+						<img class = "lambnihari" src = "images/onlineorder/lambnihari.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "shreddedlambhaleem" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "shreddedlambhaleem" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Shredded Lamb Haleem</strong></span>
+						<img class = "shreddedlambhaleem" src = "images/onlineorder/shreddedlambhaleem.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+				</div>
+				<div id = "southindian" style = "float:left;width:50%;">
+					<div>
+						<p><strong>South Indian Specials</strong></p>
+					</div>
+					<div>
+						<input type="checkbox" class = "plaindosa" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "plaindosa" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Plain Dosa</strong></span>
+						<img class = "plaindosa" src = "images/onlineorder/plaindosa.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "masaladosa" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "masaladosa" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Masala Dosa</strong></span>
+						<img class = "masaladosa" src = "images/onlineorder/masaladosa.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "ravamasaladosa" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "ravamasaladosa" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Rava Masala Dosa</strong></span>
+						<img class = "ravamasaladosa" src = "images/onlineorder/ravamasaladosa.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "paneermasaladosa" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "paneermasaladosa" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Paneer Masala Dosa</strong></span>
+						<img class = "paneermasaladosa" src = "images/onlineorder/paneermasaladosa.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "idlysambhar" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "idlysambhar" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Idly Sambhar</strong></span>
+						<img class = "idlysambhar" src = "images/onlineorder/idlysambhar.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "vadasambhar" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "vadasambhar" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Vada Sambhar</strong></span>
+						<img class = "vadasambhar" src = "images/onlineorder/vadasambhar.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "uttapam" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "uttapam" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Uttapam</strong></span>
+						<img class = "uttapam" src = "images/onlineorder/uttapam.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "puri" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "puri" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Puri</strong></span>
+						<img class = "puri" src = "images/onlineorder/puri.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+				</div>
+				<div id = "tandoorcorner" style = "float:right;width:50%;">
+					<div>
+						<p><strong>Tandoor Corner</strong></p>
+					</div>
+					<div>
+						<input type="checkbox" class = "plainnaan" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "plainnaan" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Plain Naan</strong></span>
+						<img class = "plainnaan" src = "images/onlineorder/plainnaan.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "garlicnaan" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "garlicnaan" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Garlic Naan</strong></span>
+						<img class = "garlicnaan" src = "images/onlineorder/garlicnaan.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "butternaan" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "butternaan" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Butter Naan</strong></span>
+						<img class = "butternaan" src = "images/onlineorder/butternaan.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "onionkulcha" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "onionkulcha" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Onion Kulcha</strong></span>
+						<img class = "onionkulcha" src = "images/onlineorder/onionkulcha.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "plainparatha" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "plainparatha" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Plain Paratha</strong></span>
+						<img class = "plainparatha" src = "images/onlineorder/plainparatha.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "alooparatha" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "alooparatha" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Aloo Paratha</strong></span>
+						<img class = "alooparatha" src = "images/onlineorder/alooparatha.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "tandooriroti" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "tandooriroti" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Tandoori Roti</strong></span>
+						<img class = "tandooriroti" src = "images/onlineorder/tandooriroti.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+				</div>
+				<div id = "drinks" style = "float:left;width:50%;">
+					<div>
+						<p><strong>Drinks</strong></p>
+					</div>
+					<div>
+						<input type="checkbox" class = "softdrinks" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "softdrinks" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Soft Drinks</strong></span>
+						<img class = "softdrinks" src = "images/onlineorder/softdrinks.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "sweetlassi" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "sweetlassi" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Sweet Lassi</strong></span>
+						<img class = "sweetlassi" src = "images/onlineorder/sweetlassi.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "saltlassi" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "saltlassi" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Salt Lassi</strong></span>
+						<img class = "saltlassi" src = "images/onlineorder/saltlassi.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "mangolassi" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "mangolassi" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Mango Lassi</strong></span>
+						<img class = "mangolassi" src = "images/onlineorder/mangolassi.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "strawberrylassi" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "strawberrylassi" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Strawberry Lassi</strong></span>
+						<img class = "strawberrylassi" src = "images/onlineorder/strawberrylassi.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "chai" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "chai" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Chai</strong></span>
+						<img class = "chai" src = "images/onlineorder/chai.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "coffee" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "coffee" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Coffee</strong></span>
+						<img class = "coffee" src = "images/onlineorder/coffee.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+				</div>
+				<div id = "desserts" style = "float:right;width:50%;">
+					<div>
+						<p><strong>Desserts</strong></p>
+					</div>
+					<div>
+						<input type="checkbox" class = "gulabjamun" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "gulabjamun" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Gulab Jamun</strong></span>
+						<img class = "gulabjamun" src = "images/onlineorder/gulabjamun.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "carrothalwa" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "carrothalwa" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Carrot Halwa</strong></span>
+						<img class = "carrothalwa" src = "images/onlineorder/carrothalwa.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "rasmalai" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "rasmalai" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Rasmalai</strong></span>
+						<img class = "rasmalai" src = "images/onlineorder/rasmalai.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "badamkheer" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "badamkheer" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Badam Kheer</strong></span>
+						<img class = "badamkheer" src = "images/onlineorder/badamkheer.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+				</div>
+				<div id = "lunchcombo" style = "float:left;width:50%;">
+					<div>
+						<p><strong>Lunch Combo</strong></p>
+					</div>
+					<div>
+						<input type="checkbox" class = "vegcurrycombo" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "vegcurrycombo" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Vegetable Curry Combo</strong></span>
+						<img class = "vegcurrycombo" src = "images/onlineorder/vegcurrycombo.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "chickencurrycombo" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "chickencurrycombo" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Chicken Curry Combo</strong></span>
+						<img class = "chickencurrycombo" src = "images/onlineorder/chickencurrycombo.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+					<div>
+						<input type="checkbox" class = "lambcurrycombo" onclick = "if(this.checked){check(this)}else{uncheck(this)}">
+						<span type = "span" class = "lambcurrycombo" onmouseover = "big(this)" onmouseout = "small(this)" style = "background:transparent;outline:none;border:none;opacity:0.7"><strong>Lamb Curry Combo</strong></span>
+						<img class = "lambcurrycombo" src = "images/onlineorder/lambcurrycombo.jpg" style = "width:200px;height:200px;"></img>
+					</div>
+				</div>
+			</div>
+			<div style = "height:200px;clear:both">
+			</div>
+		</div>
+	</div>
+	<script src = "onlineorder.js"></script>
+</body>
+</html>
